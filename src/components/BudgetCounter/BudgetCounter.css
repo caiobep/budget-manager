@@ -19,3 +19,11 @@
   border: 1px solid;
   border-radius: 100%;
 }
+
+
+@media only screen
+and (max-device-width : 320px) {
+  .container {
+    height: 18%;
+  }
+}
