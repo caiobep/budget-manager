@@ -1,24 +1,34 @@
-import React from 'react'
-import BudgetCounter from '../../components/BudgetCounter'
+import React, { Component } from 'react'
+import { Switch, Route } from 'react-router-dom'
 
-const App = () => (
-  <div className="app-container">
-    <BudgetCounter
-      money={200}
-      name='Main Budget'
-      spentMoney={42}
-    ></BudgetCounter>
-    <BudgetCounter
-      money={200}
-      name='Main Budget'
-      spentMoney={58}
-    ></BudgetCounter>
-    <BudgetCounter
-      money={200}
-      name='Main Budget'
-      spentMoney={298}
-    ></BudgetCounter>
-  </div>
-)
+import AppBar from '../../components/AppBar'
+
+import MyBudget from '../../containers/MyBudget'
+
+import './App.css'
+
+class App extends Component {
+
+  static state = {
+    budgets: null,
+    criandoBudget: false
+  }
+
+  render() {
+    return (
+      <div className="app-container">
+        <AppBar title="My Budget"/>
+
+        <div className="app-body">
+          <Switch>
+            <Route path="/" component={MyBudget} />
+
+          </Switch>
+        </div>
+
+      </div>
+    )
+  }
+}
 
 export default App

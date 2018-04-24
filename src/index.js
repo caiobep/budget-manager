@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { BrowserRouter } from 'react-router-dom'
 import 'typeface-roboto-slab'
 
 import './index.css'
@@ -9,8 +10,10 @@ import registerServiceWorker from './registerServiceWorker'
 const targetContainer = document.getElementById('root')
 
 ReactDOM.render(
-  <App />,
-  targetContainer
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+  , targetContainer
 )
 
 registerServiceWorker()

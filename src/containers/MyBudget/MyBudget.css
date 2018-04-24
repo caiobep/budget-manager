@@ -1,0 +1,22 @@
+.budgets-container {
+  height: 89vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.budget-creator {
+  flex-grow: 1;
+  color: rgba(0, 0, 0, 0.53);
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.budget-creator > span:first-child {
+  border: 1px solid rgba(0, 0, 0, 0.60);
+  border-radius: 80%;
+  padding: 6px 12px;
+  margin: 10px;
+}

@@ -1,18 +1,20 @@
 .container {
-  height: 10%;
+  height: 12%;
   text-align: center;
   color: #fff;
   padding: 5% 10%;
-  font-size: 4rem;
+  font-size: 3rem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: column;
+}
+
+.subtitle {
+  font-size: 0.4em;
 }
 
 .value-changer {
   background-color: none;
-  padding: 4px 30px;
+  padding: 2px 20px;
   margin: 0 5%;
   border: 1px solid;
   border-radius: 100%;

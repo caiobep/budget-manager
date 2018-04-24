@@ -23,9 +23,8 @@ const BudgetCounter = ({name, money, spentMoney}) => {
 
   return (
     <div className="container" style={style}>
-      <span className="value-changer">+</span>
       <span> $ { currentAvailableMoney } </span>
-      <span className="value-changer">-</span>
+      <span className="subtitle">{name} </span>
     </div>
   )
 }
