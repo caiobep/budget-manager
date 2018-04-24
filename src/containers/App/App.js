@@ -10,21 +10,20 @@ import Settings from '../Settings'
 import './App.css'
 
 class App extends Component {
-
   static state = {
     budgets: null,
     criandoBudget: false
   }
 
-  render() {
+  render () {
     return (
-      <div className="app-container">
+      <div className='app-container'>
 
-        <div className="app-body">
+        <div className='app-body'>
           <SwipeableRoutes>
-            <Route path="/settings" component={Settings} />
-            <Route path="/" exact component={MyBudget} />
-            <Route path="/create" component={CreateBudget} />
+            <Route path='/settings' component={Settings} />
+            <Route path='/' exact component={MyBudget} />
+            <Route path='/create' component={CreateBudget} />
           </SwipeableRoutes>
         </div>
 
