@@ -1,0 +1,26 @@
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+  color: #333;
+}
+
+.not-found h1 {
+  font-size: 8em;
+  font-family: 'Roboto Slab';
+  font-weight: 300;
+  text-align: center;
+  padding: 0;
+  margin:0
+}
+
+.not-found span {
+  font-size: 2em;
+}
+
+.not-found img {
+  width: 90vw;
+}
