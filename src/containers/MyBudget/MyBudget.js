@@ -1,5 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom'
+// import PropTypes from 'prop-types';
 import BudgetCounter from '../../components/BudgetCounter'
 import './MyBudget.css'
 
@@ -22,8 +23,10 @@ const MyBudget = () => (
     ></BudgetCounter>
 
     <div className="budget-creator">
-      <span>+</span>
-      <span> Novo Budget </span>
+      <Link to="/create">
+        <span id="buget-creator-icon">+</span>
+        <span> New Budget </span>
+      </Link>
     </div>
   </div>
 )

@@ -18,3 +18,40 @@
   margin-top: auto;
   margin-bottom: 10%;
 }
+
+input {
+  border: none;
+  border-bottom: solid rgba(0, 0, 0, 0.2) 1px;
+  padding: 2%;
+  font-family: 'Roboto Slab';
+  font-size: 1.2em;
+}
+
+input:focus {
+  outline: none;
+}
+
+.animate {
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.active-button, button {
+	position: relative;
+	padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  float: left;
+	border-radius: 10px;
+	font-family: 'Roboto Slab';
+	font-size: 25px;
+	color: #FFF;
+
+	text-decoration: none;
+  background-color: #333;
+}
+
+.action-button:active, button:active {
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}

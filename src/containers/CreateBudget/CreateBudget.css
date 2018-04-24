@@ -1,0 +1,12 @@
+.create-budget h1 {
+  margin-left: 4vw;
+}
+
+.form-create-budget {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-create-budget * {
+  margin: 4%;
+}

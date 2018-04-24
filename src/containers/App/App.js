@@ -2,8 +2,10 @@ import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
 
 import AppBar from '../../components/AppBar'
+import CreateBudget from '../CreateBudget'
 
-import MyBudget from '../../containers/MyBudget'
+import MyBudget from '../MyBudget'
+import NotFound from '../NotFound'
 
 import './App.css'
 
@@ -17,12 +19,13 @@ class App extends Component {
   render() {
     return (
       <div className="app-container">
-        <AppBar title="My Budget"/>
 
         <div className="app-body">
           <Switch>
-            <Route path="/" component={MyBudget} />
+            <Route path="/" exact component={MyBudget} />
+            <Route path="/create" component={CreateBudget} />
 
+            <Route component={NotFound} />
           </Switch>
         </div>
 
