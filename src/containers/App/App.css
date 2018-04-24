@@ -4,6 +4,12 @@
   height: 100vh;
 }
 
+.page-title {
+  color: #333;
+  font-size: 2em;
+  margin-left: 4vw;
+}
+
 .budget-adder {
   color: #9fa3a1;
   flex-grow: 1;
