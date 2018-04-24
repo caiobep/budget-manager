@@ -1,11 +1,7 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import './CreateBudget.css'
 
 class CreateBudget extends React.Component {
-  static propTypes = {
-    onCreate: PropTypes.function
-  }
 
   state = {
     nome: '',
@@ -23,7 +19,7 @@ class CreateBudget extends React.Component {
           />
           <input placeholder="Size"
             type="numeber"
-            inputmode="numeric"
+            inputMode="numeric"
             pattern="[0-9]*"
             value={this.state.limite}
           />

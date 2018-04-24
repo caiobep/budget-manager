@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
-import { Switch, Route } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import SwipeableRoutes from 'react-swipeable-routes'
 
-import AppBar from '../../components/AppBar'
 import CreateBudget from '../CreateBudget'
 
 import MyBudget from '../MyBudget'
 import Settings from '../Settings'
-import NotFound from '../NotFound'
 
 import './App.css'
 
