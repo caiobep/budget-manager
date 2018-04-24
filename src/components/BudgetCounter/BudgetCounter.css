@@ -1,0 +1,19 @@
+.container {
+  height: 10%;
+  text-align: center;
+  color: #fff;
+  padding: 5% 10%;
+  font-size: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.value-changer {
+  background-color: none;
+  padding: 4px 30px;
+  margin: 0 5%;
+  border: 1px solid;
+  border-radius: 100%;
+}
