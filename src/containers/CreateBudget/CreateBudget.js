@@ -15,13 +15,13 @@ class CreateBudget extends React.Component {
   render () {
     return (
       <div className="create-budget">
-        <h1> Novo Budget </h1>
+        <h1 className="page-title"> New Budget </h1>
         <div className="form-create-budget">
-          <input placeholder="Nome"
+          <input placeholder="Tag"
             type="text"
             value={this.state.nome}
           />
-          <input placeholder="Limite"
+          <input placeholder="Size"
             type="numeber"
             inputmode="numeric"
             pattern="[0-9]*"

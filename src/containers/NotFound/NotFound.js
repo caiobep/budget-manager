@@ -1,5 +1,5 @@
 import React from 'react'
-import 'typeface-gugi'
+
 import './NotFound.css'
 
 const NotFound = () => (
