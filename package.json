@@ -2,6 +2,13 @@
   "name": "budget-manager",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "lint": "eslint src/**.js",
+    "lint:fix": "eslint --fix src/**.js"
+  },
   "dependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
@@ -12,14 +19,6 @@
     "react-swipeable-routes": "^0.4.1",
     "react-swipeable-views": "^0.12.13",
     "typeface-roboto-slab": "0.0.54"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "lint": "eslint src/**.js",
-    "lint:fix": "eslint --fix src/**.js"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
@@ -33,6 +32,6 @@
     "pre-commit": "^1.2.2"
   },
   "pre-commit": [
-    "lint:fix"
+    "lint:fix",
   ]
 }
