@@ -1,7 +1,7 @@
-import React from 'react';
+import * as React from 'react'
 
 class Settings extends React.Component {
-  render() {
+  public render() {
     return (
       <div>
         <h1 className="page-title"> Settings </h1>

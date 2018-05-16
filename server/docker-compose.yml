@@ -1,7 +1,7 @@
 version: '3'
 services:
   prisma:
-    image: prismagraphql/prisma:1.7
+    image: prismagraphql/prisma:1.8
     restart: always
     ports:
     - "4466:4466"
@@ -13,14 +13,18 @@ services:
         databases:
           default:
             connector: postgres
-            active: true
-            host: db
+            host: postgres
             port: 5432
             user: prisma
             password: prisma
-  db:
+            migrations: true
+  postgres:
     image: postgres
     restart: always
     environment:
       POSTGRES_USER: prisma
       POSTGRES_PASSWORD: prisma
+    volumes:
+      - postgres:/var/lib/postgresql/data
+volumes:
+  postgres:

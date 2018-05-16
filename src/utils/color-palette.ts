@@ -1,4 +1,16 @@
-export const colorPalette = [
+/* tslint:disable:object-literal-sort-keys */
+
+export interface IColor {
+  name: string,
+  hexadecimal: string
+  fontColor: string
+  alpha: number
+  red: number
+  blue: number
+  green: number
+}
+
+export const colorPalette: IColor[] = [
   {
     "name" : "nord1",
     "hexadecimal": '#3b4253',
@@ -99,15 +111,6 @@ export const colorPalette = [
     "green" : 0.50254195928573608
   },
   {
-    "name" : "nord11",
-    "hexadecimal": '#c16069',
-    "fontColor": '#fff',
-    "alpha" : 1,
-    "red" : 0.75572323799133301,
-    "blue" : 0.41053402423858643,
-    "green" : 0.37725883722305298
-  },
-  {
     "name" : "nord12",
     "hexadecimal": '#d2876d',
     "fontColor": '#fff',
@@ -145,28 +148,19 @@ export const colorPalette = [
   }
 ]
 
-export const darkFontColors = colorPalette.filter(
+export const RED = {
+  "name" : "nord11",
+  "hexadecimal": '#c16069',
+  "fontColor": '#87313B',
+}
+
+export const darkFontColors: IColor[] = colorPalette.filter(
   ({fontColor}) => (fontColor !== '#fff')
 )
 
-export const lightFontColors = colorPalette.filter(
+export const lightFontColors: IColor[] = colorPalette.filter(
   ({fontColor}) => (fontColor === '#fff')
 )
-
-
-export const randomColor = (transformFunction, allowRepeat = true) => {
-  if (typeof transformFunction === 'function') {
-    return transformFunction(
-      colorPalette[
-        Math.floor(Math.random() * colorPalette.length)
-      ]
-    )
-  }
-
-  return colorPalette[
-    Math.floor(Math.random() * colorPalette.length)
-  ]
-}
 
 
 export default colorPalette

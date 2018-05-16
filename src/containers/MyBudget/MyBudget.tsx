@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react'
 import { Link } from 'react-router-dom'
 // import PropTypes from 'prop-types';
 import BudgetCounter from '../../components/BudgetCounter'
@@ -10,17 +10,17 @@ const MyBudget = () => (
       money={200}
       name='Main Budget'
       spentMoney={42}
-    ></BudgetCounter>
+    />
     <BudgetCounter
       money={200}
       name='Main Budget'
       spentMoney={58}
-    ></BudgetCounter>
+    />
     <BudgetCounter
       money={200}
       name='Main Budget'
       spentMoney={298}
-    ></BudgetCounter>
+    />
 
     <div className="budget-creator">
       <Link to="/create">

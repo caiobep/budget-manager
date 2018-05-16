@@ -1,14 +1,14 @@
-import React from 'react'
+import * as React from 'react'
 import './CreateBudget.css'
 
 class CreateBudget extends React.Component {
 
-  state = {
+  public state = {
+    limite: '',
     nome: '',
-    limite: ''
   }
 
-  render () {
+  public render () {
     return (
       <div className="create-budget">
         <h1 className="page-title"> New Budget </h1>
@@ -23,7 +23,7 @@ class CreateBudget extends React.Component {
             pattern="[0-9]*"
             value={this.state.limite}
           />
-          <button onClick={(e) => console.log(e)}>
+          <button>
             Add Budget
           </button>
         </div>
